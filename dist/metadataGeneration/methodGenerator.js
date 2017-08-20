@@ -107,7 +107,7 @@ var MethodGenerator = (function () {
             if (expression.arguments.length > 1 && expression.arguments[1].text) {
                 description = expression.arguments[1].text;
             }
-            if (expression.arguments.length > 2 && expression.arguments[2].text) {
+            if (expression.arguments.length > 2 && expression.arguments[2]) {
                 var argument = expression.arguments[2];
                 examples = _this.getExamplesValue(argument);
             }
